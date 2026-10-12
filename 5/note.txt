@@ -1,0 +1,82 @@
+Transactions:
+0: ['Milk', 'Bread', 'Eggs']
+1: ['Milk', 'Bread']
+2: ['Bread', 'Eggs']
+3: ['Milk', 'Eggs']
+4: ['"Milk', 'Bread', 'Eggs', 'Butter"']
+5: ['Bread', 'Butter']
+6: ['Milk', 'Butter']
+7: ['"Milk', 'Bread', 'Eggs', 'Butter"']
+8: ['Eggs', 'Butter']
+9: ['Milk', 'Bread']
+
+Frequent Itemsets:
+    support                       itemsets
+0       0.2                        ("Milk)
+1       0.7                        (Bread)
+2       0.3                       (Butter)
+3       0.2                      (Butter")
+4       0.6                         (Eggs)
+5       0.5                         (Milk)
+6       0.2                 (Bread, "Milk)
+7       0.2               (Butter", "Milk)
+8       0.2                  (Eggs, "Milk)
+9       0.1                (Bread, Butter)
+10      0.2               (Butter", Bread)
+11      0.4                  (Bread, Eggs)
+12      0.3                  (Bread, Milk)
+13      0.1                 (Butter, Eggs)
+14      0.1                 (Butter, Milk)
+15      0.2                (Butter", Eggs)
+16      0.2                   (Eggs, Milk)
+17      0.2        (Butter", Bread, "Milk)
+18      0.2           (Bread, Eggs, "Milk)
+19      0.2         (Butter", Eggs, "Milk)
+20      0.2         (Butter", Bread, Eggs)
+21      0.1            (Bread, Eggs, Milk)
+22      0.2  (Butter", Bread, Eggs, "Milk)
+
+Association Rules:
+                antecedents             consequents  antecedent support  consequent support  ...  zhangs_metric   jaccard  certainty  kulczynski
+0                   ("Milk)                 (Bread)                 0.2                 0.7  ...       0.375000  0.285714   1.000000    0.642857
+1                 (Butter")                 ("Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+2                   ("Milk)               (Butter")                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+3                   ("Milk)                  (Eggs)                 0.2                 0.6  ...       0.500000  0.333333   1.000000    0.666667
+4                 (Butter")                 (Bread)                 0.2                 0.7  ...       0.375000  0.285714   1.000000    0.642857
+5                   (Bread)                  (Eggs)                 0.7                 0.6  ...      -0.142857  0.444444  -0.071429    0.619048
+6                    (Eggs)                 (Bread)                 0.6                 0.7  ...      -0.111111  0.444444  -0.111111    0.619048
+7                    (Milk)                 (Bread)                 0.5                 0.7  ...      -0.250000  0.333333  -0.333333    0.514286
+8                 (Butter")                  (Eggs)                 0.2                 0.6  ...       0.500000  0.333333   1.000000    0.666667
+9          (Butter", Bread)                 ("Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+10         (Butter", "Milk)                 (Bread)                 0.2                 0.7  ...       0.375000  0.285714   1.000000    0.642857
+11           (Bread, "Milk)               (Butter")                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+12                (Butter")          (Bread, "Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+13                  ("Milk)        (Butter", Bread)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+14            (Bread, Eggs)                 ("Milk)                 0.4                 0.2  ...       1.000000  0.500000   0.375000    0.750000
+15           (Bread, "Milk)                  (Eggs)                 0.2                 0.6  ...       0.500000  0.333333   1.000000    0.666667
+16            (Eggs, "Milk)                 (Bread)                 0.2                 0.7  ...       0.375000  0.285714   1.000000    0.642857
+17                  ("Milk)           (Bread, Eggs)                 0.2                 0.4  ...       0.750000  0.500000   1.000000    0.750000
+18          (Butter", Eggs)                 ("Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+19         (Butter", "Milk)                  (Eggs)                 0.2                 0.6  ...       0.500000  0.333333   1.000000    0.666667
+20            (Eggs, "Milk)               (Butter")                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+21                (Butter")           (Eggs, "Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+22                  ("Milk)         (Butter", Eggs)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+23         (Butter", Bread)                  (Eggs)                 0.2                 0.6  ...       0.500000  0.333333   1.000000    0.666667
+24          (Butter", Eggs)                 (Bread)                 0.2                 0.7  ...       0.375000  0.285714   1.000000    0.642857
+25            (Bread, Eggs)               (Butter")                 0.4                 0.2  ...       1.000000  0.500000   0.375000    0.750000
+26                (Butter")           (Bread, Eggs)                 0.2                 0.4  ...       0.750000  0.500000   1.000000    0.750000
+27             (Eggs, Milk)                 (Bread)                 0.2                 0.7  ...      -0.333333  0.125000  -0.666667    0.321429
+28   (Butter", Bread, Eggs)                 ("Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+29  (Butter", Bread, "Milk)                  (Eggs)                 0.2                 0.6  ...       0.500000  0.333333   1.000000    0.666667
+30   (Butter", Eggs, "Milk)                 (Bread)                 0.2                 0.7  ...       0.375000  0.285714   1.000000    0.642857
+31     (Bread, Eggs, "Milk)               (Butter")                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+32         (Butter", Bread)           (Eggs, "Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+33          (Butter", Eggs)          (Bread, "Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+34         (Butter", "Milk)           (Bread, Eggs)                 0.2                 0.4  ...       0.750000  0.500000   1.000000    0.750000
+35            (Bread, Eggs)        (Butter", "Milk)                 0.4                 0.2  ...       1.000000  0.500000   0.375000    0.750000
+36           (Bread, "Milk)         (Butter", Eggs)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+37            (Eggs, "Milk)        (Butter", Bread)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+38                (Butter")    (Bread, Eggs, "Milk)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+39                  ("Milk)  (Butter", Bread, Eggs)                 0.2                 0.2  ...       1.000000  1.000000   1.000000    1.000000
+
+[40 rows x 14 columns]

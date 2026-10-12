@@ -1,0 +1,32 @@
+Data loaded successfully.
+First 5 rows:
+   CustomerID  Age  Annual Income (k$)  Spending Score (1-100)
+0           1   19                  15                      39
+1           2   21                  15                      81
+2           3   20                  16                       6
+3           4   23                  16                      77
+4           5   31                  17                      40
+
+Null values per column:
+CustomerID                0
+Age                       0
+Annual Income (k$)        0
+Spending Score (1-100)    0
+dtype: int64
+
+Scatter plot saved as 'scatter_age_spending.png'
+Clustered scatter plot saved as 'scatter_clusters.png'
+
+Cluster Centroids (Age, Spending Score):
+Cluster 1: Age=37.35, Spending Score=21.85
+Cluster 2: Age=27.68, Spending Score=83.28
+Cluster 3: Age=57.90, Spending Score=10.87
+Cluster 4: Age=53.59, Spending Score=47.53
+Cluster 5: Age=28.21, Spending Score=56.00
+
+Number of customers in each cluster:
+Cluster 1: 62 customers
+Cluster 2: 53 customers
+Cluster 3: 39 customers
+Cluster 4: 17 customers
+Cluster 5: 29 customers

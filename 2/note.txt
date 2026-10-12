@@ -1,0 +1,25 @@
+
+Null values in each column:
+CustomerID        0
+Age               0
+Spending Score    0
+
+Best number of clusters (assumed from elbow method): 5
+
+Clusters assigned to data points (first 10 rows):
+ CustomerID  Age  Spending Score  Cluster
+          1   19              39        2
+          2   21              81        4
+          3   20               6        3
+          4   23              77        1
+          5   31              40        2
+          6   22              76        1
+          7   35               6        3
+          8   23              94        4
+          9   64               3        3
+         10   30              72        1
+
+Plots saved as:
+- scatter_age_spending.png
+- elbow_method.png
+- clusters_scatter.png
